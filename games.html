@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>theSelector</title>
+    </head>
+    <body>
+        <div class="app">
+            <!--
+                * Name: Patrick Sappington
+                * Assignment: Mobile App /w Cordova #2
+                * Date: 11/03/2016
+            -->
+            
+            <!-- Header, logo area, return area. -->
+            <header>
+                <div class="logo">
+                    <span class="head-the">the</span><span class="head-selector">SELECTOR</span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html"><img src="img/back-home.png" style='width:16px; height:auto;'></a></li>
+                    </ul>
+                </nav>
+                <div class="clear"></div>
+            </header>
+            
+            <!-- Alert display, placeholder for correct height on fade in. -->
+            <div class="alert" id="alert">PLACEHOLDER</div>
+            
+            <!-- Main app area -->
+            <main id="main">
+                <!-- Lots of options to choose from and different things to change/add -->
+                    <div class="editGroup">ADD GAME</div>
+
+                    <div class="editAll">
+                        <div class="editContent">
+                            <div class="game_title">GAME TITLE</div>
+                            <input type='text' class='editTextbox' id='addGameName'>
+                            <div class="clear"></div>
+                            <div class='option_button' id='add_game'>ADD GAME</div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+
+                    <div class="editGroup">REMOVE GAME</div>
+
+                    <div class="editAll">
+                        <div class="editContent">
+                            <div class="game_title">GAME</div>
+                            <select class='editSelect' id="removeGames"></select>
+                            <div class="clear"></div>
+                            <div class="option_button" id="remove_game">REMOVE GAME</div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+
+                    <div class="editGroup">ADD OPTION</div>
+
+                    <div class="editAll">
+                        <div class="editContent">
+                            <div class="game_title">OPTION</div>
+                            <input type='text' class='editTextbox' id='addOptionName'>
+                            <div class="clear"></div>
+                            <div class="game_title">GAME</div>
+                            <select class='editSelect' id="addOptions"></select>
+                            <div class="clear"></div>
+                            <div class='option_button' id='add_option'>ADD OPTION</div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+
+                    <div class="editGroup">REMOVE OPTION</div>
+
+                    <div class="editAll">
+                        <div class="editContent">
+                            <div class="game_title">Game</div>
+                            <select class='editSelect' id="removeOptionsGame"></select>
+                            <div class="clear"></div>
+                            <div class="game_title">OPTION</div>
+                            <select class='editSelect' id="removeOption"></select>
+                            <div class="clear"></div>
+
+                            <div class='option_button' id='remove_option'>REMOVE OPTION</div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+
+                    <div class="editGroup">CHANGE IMAGE</div>
+
+                    <div class="editAll">
+                        <div class="editContent">
+                            <div class="game_title">Game</div>
+                            <select class='editSelect' id="addImageGame"></select>
+                            <div class="clear"></div>
+                            <div class="game_title">IMAGE</div>
+                            <div class="add_image_button" id="addImage">CHOOSE IMAGE</div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+            </main>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/vel.js"></script> <!-- VelocityJS for smoother animations on mobile -->
+        <script type="text/javascript" src="js/games.js"></script>
+    </body>
+</html>

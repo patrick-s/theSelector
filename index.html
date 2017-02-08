@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>theSelector</title>
+    </head>
+    <body>
+        <div class="app">
+            <!--
+                * Name: Patrick Sappington
+                * Assignment: Mobile App /w Cordova #2
+                * Date: 11/03/2016
+            -->
+            
+            <!-- Header with logo and link to options page -->
+            <header>
+                <div class="logo">
+                    <span class="head-the">the</span><span class="head-selector">SELECTOR</span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="games.html"><img src="img/games-grey.png" style='width:16px; height:auto;'></a></li>
+                    </ul>
+                </nav>
+                <div class="clear"></div>
+            </header>
+            
+            <!-- Main app area -->
+            <main id="main">
+                <!-- Game Title Area -->
+                <div class="gameTitle" id="gameTitle">
+                    <span id="gameTitleText">PLACEHOLDER</span> <!-- Placeholder text so it display the correct height during animation-->
+                </div>
+                
+                <!-- Game Options-->
+                <div class="gameOptions" id="gameOptions">
+                    <!-- Preselect for holding game options before displaying answer -->
+                    <div id="preSelect">
+                        <div class="selectOption">SELECT OPTIONS BELOW</div>
+                        <div id="form">
+                        </div>
+
+                        <div class="submitForm" id="submitForm">SELECT FOR ME</div>
+                    </div>
+                    
+                    <!-- Anwser area -->
+                    <div class="theAnswer" id="theAnswer"></div>
+                </div>
+                
+                <!-- Game display area -->
+                <div class="games" id="games">
+                </div>
+            </main>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/vel.js"></script> <!-- VelocityJS for smoother animations on mobile -->
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
